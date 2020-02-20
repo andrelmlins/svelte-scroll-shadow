@@ -1,7 +1,6 @@
 <script>
   import { onMount, onDestroy, createEventDispatcher } from "svelte";
   import ResizeObserver from "resize-observer-polyfill";
-  import screenfull from "screenfull";
 
   export let style = "";
   export let styleSubcontainer;
@@ -17,17 +16,18 @@
 
   let scroll = false;
   let component = null;
+  let RO = null;
 
   onMount(() => {
     RO = new ResizeObserver(() => {
-      if (
-        component.parentNode.clientHeight < component.parentNode.scrollHeight
-      ) {
+      console.log(component.clientHeight, component.scrollHeight);
+      if (component.clientHeight < component.scrollHeight) {
         scroll = true;
       } else {
         scroll = false;
       }
     });
+
     RO.observe(component.parentNode);
   });
 
@@ -62,7 +62,7 @@
   }
   .subcontainer::-webkit-scrollbar-thumb {
     background: var(--scrollColor);
-    border-radius: 5;
+    border-radius: 5px;
     overflow: hidden;
   }
   .subcontainer::-webkit-scrollbar-thumb:hover {
@@ -77,7 +77,7 @@
   <div
     aria-label="subcontainer-scroll"
     bind:this={component}
-    className="subcontainer"
+    class="subcontainer"
     style={styleSubcontainer}>
     <slot />
   </div>
