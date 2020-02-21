@@ -20,7 +20,6 @@
 
   onMount(() => {
     RO = new ResizeObserver(() => {
-      console.log(component.clientHeight, component.scrollHeight);
       if (component.clientHeight < component.scrollHeight) {
         scroll = true;
       } else {
