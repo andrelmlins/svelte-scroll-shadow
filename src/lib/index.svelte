@@ -1,18 +1,18 @@
 <script>
-  import { onMount, onDestroy } from "svelte";
-  import ResizeObserver from "resize-observer-polyfill";
+  import { onMount, onDestroy } from 'svelte';
+  import ResizeObserver from 'resize-observer-polyfill';
 
-  export let style = "";
+  export let style = '';
   export let styleSubcontainer;
-  export let scrollColor = "#c5c5c5";
-  export let scrollPadding = "0px";
-  export let scrollWidth = "8px";
-  export let scrollColorHover = "#a6a6a6";
+  export let scrollColor = '#c5c5c5';
+  export let scrollPadding = '0px';
+  export let scrollWidth = '8px';
+  export let scrollColorHover = '#a6a6a6';
   export let shadow =
-    "0 2px 4px rgba(0, 0, 0, 0.2) inset, 0 -2px 4px rgba(0, 0, 0, 0.2) inset";
+    '0 2px 4px rgba(0, 0, 0, 0.2) inset, 0 -2px 4px rgba(0, 0, 0, 0.2) inset';
   export let isShadow = false;
 
-  $: shadow = isShadow ? shadow : "none";
+  $: shadow = isShadow ? shadow : 'none';
 
   let scroll = false;
   let component = null;
@@ -57,7 +57,7 @@
     background: transparent;
   }
   .subcontainer::-webkit-scrollbar-track {
-    background: "transparent";
+    background: 'transparent';
   }
   .subcontainer::-webkit-scrollbar-thumb {
     background: var(--scrollColor);

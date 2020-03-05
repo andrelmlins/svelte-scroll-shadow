@@ -1,6 +1,6 @@
 <script>
-  import SvelteScrollShadow from "../lib/index.svelte";
-  import cars from "./cars.js";
+  import SvelteScrollShadow from '../lib/index.svelte';
+  import cars from './cars.js';
 </script>
 
 <style>
