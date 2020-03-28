@@ -5,10 +5,12 @@
   "repository": "https://github.com/andrelmlins/svelte-scroll-shadow",
   "author": "André Lins <andrelucas01@hotmail.com> (https://andrelmlins.github.io/)",
   "license": "MIT",
+  "svelte": "src/lib/ScrollShadow.svelte",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
   "homepage": "https://svelte-scroll-shadow.netlify.com/",
   "files": [
+    "src/lib/ScrollShadow.svelte",
     "dist",
     "README.md"
   ],

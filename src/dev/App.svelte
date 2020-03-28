@@ -1,5 +1,5 @@
 <script>
-  import SvelteScrollShadow from '../lib/index.svelte';
+  import ScrollShadow from '../lib/ScrollShadow.svelte';
   import cars from './cars.js';
 </script>
 
@@ -83,16 +83,13 @@
   <div class="root">
     <div class="card">
       <h5>With SvelteScrollShadow</h5>
-      <SvelteScrollShadow
-        isShadow={true}
-        scrollWidth="10px"
-        scrollPadding="5px">
+      <ScrollShadow isShadow={true} scrollWidth="10px" scrollPadding="5px">
         <ul>
           {#each cars as language}
             <li>{language}</li>
           {/each}
         </ul>
-      </SvelteScrollShadow>
+      </ScrollShadow>
     </div>
     <div class="card">
       <h5>Without SvelteScrollShadow</h5>

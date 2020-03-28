@@ -12,6 +12,8 @@ npm i svelte-scroll-shadow
 yarn add svelte-scroll-shadow
 ```
 
+<em>Note: to use this library in sapper, install as devDependency. See the [link](https://github.com/sveltejs/sapper-template#using-external-components).</em>
+
 ## Demo [Link](https://svelte-scroll-shadow.netlify.com/)
 
 Local demo:
@@ -24,19 +26,21 @@ yarn && yarn start
 
 ## Examples
 
+An example of how to use the library:
+
 ```js
 <script>
-  import SvelteScrollShadow from "svelte-scroll-shadow";
+  import ScrollShadow from "svelte-scroll-shadow";
 </script>
 
-<SvelteScrollShadow>
+<ScrollShadow>
   <ul>
     <li>Teste</li>
     <li>Teste</li>
     <li>Teste</li>
     <li>Teste</li>
   </ul>
-</SvelteScrollShadow>
+</ScrollShadow>
 ```
 
 ## Properties
