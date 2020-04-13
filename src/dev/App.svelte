@@ -7,16 +7,19 @@
   main {
     display: flex;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 16px;
+    box-sizing: border-box;
   }
 
   h1 {
     color: white;
     text-shadow: 1px 1px 2px black;
-    margin: 0;
+    margin-bottom: 0;
+    text-align: center;
   }
 
   h5 {
@@ -34,6 +37,7 @@
   }
 
   .root {
+    width: 100%;
     display: flex;
     justify-content: center;
   }
@@ -44,7 +48,7 @@
     display: flex;
     flex-direction: column;
     border-radius: 2px;
-    width: 500px;
+    width: 400px;
     max-width: 40%;
     background-color: white;
     max-height: 400px;
@@ -72,6 +76,18 @@
 
   li:hover {
     background-color: #eeeeee;
+  }
+
+  @media screen and (max-width: 800px) {
+    .root {
+      flex-direction: column;
+    }
+
+    .card {
+      max-width: 100%;
+      margin-right: 0px;
+      margin-bottom: 16px;
+    }
   }
 </style>
 
