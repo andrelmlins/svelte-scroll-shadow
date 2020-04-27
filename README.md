@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/svelte-scroll-shadow.svg)](https://www.npmjs.com/package/svelte-scroll-shadow) &bull; [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/andrelmlins/svelte-scroll-shadow/blob/master/LICENSE) &bull; [![Build Status](https://travis-ci.com/andrelmlins/svelte-scroll-shadow.svg?branch=master)](https://travis-ci.com/andrelmlins/svelte-scroll-shadow) &bull; [![Dependencies](https://david-dm.org/andrelmlins/svelte-scroll-shadow.svg)](https://david-dm.org/andrelmlins/svelte-scroll-shadow) &bull; [![Netlify Status](https://api.netlify.com/api/v1/badges/53827e2d-1e33-4e5b-a563-b05436626172/deploy-status)](https://app.netlify.com/sites/svelte-scroll-shadow/deploys) &bull; [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/andrelmlins/svelte-scroll-shadow.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/andrelmlins/svelte-scroll-shadow/context:javascript)
 
-Component that customizes the image and inserts shadow when scrolling exists
+Component that customizes the scroll and inserts shadow when scrolling exists
 
 ## Installation
 
