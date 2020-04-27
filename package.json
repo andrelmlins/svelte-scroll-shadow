@@ -1,6 +1,6 @@
 {
   "name": "svelte-scroll-shadow",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Component that customizes the scroll and inserts shadow when scrolling exists",
   "repository": "https://github.com/andrelmlins/svelte-scroll-shadow",
   "author": "André Lins <andrelucas01@hotmail.com> (https://andrelmlins.github.io/)",

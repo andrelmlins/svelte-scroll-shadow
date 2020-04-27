@@ -94,7 +94,8 @@
 <main>
   <h1>Svelte Scroll Shadow</h1>
   <h4>
-    Component that customizes the image and inserts shadow when scrolling exists
+    Component that customizes the scroll and inserts shadow when scrolling
+    exists
   </h4>
   <div class="root">
     <div class="card">
