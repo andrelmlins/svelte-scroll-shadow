@@ -21,7 +21,7 @@ Local demo:
 ```
 git clone https://github.com/andrelmlins/svelte-scroll-shadow.git
 cd svelte-scroll-shadow
-yarn && yarn start
+npm install && npm run dev
 ```
 
 ## Examples
